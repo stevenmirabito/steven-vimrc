@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Move to directory of script
 OLDDIR=`pwd`
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
