@@ -13,47 +13,72 @@ source ~/.vimrc_bundles
 " User files (optional)
 silent! source ~/.vimrc_user
 
-" Enable mouse
+" Navigation
 set mouse=a
+set foldmethod=syntax
+set foldlevelstart=99
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
+nnoremap  <tab> :bn<CR>
+nnoremap  <S-tab> :bp<CR>
+nnoremap  <Space>  za
 
 " Relative line numbers
-set nu
-set rnu
+set number
 
 " Fix backspace
 set backspace=indent,eol,start
 
-" Colors
+" Display
+set encoding=utf-8
 set t_Co=256
-let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-colorscheme Obsidian 
+colorscheme obsidian
 syntax on
+set cursorline
+set nowrap
+set splitbelow
+set hidden
 
 " Powerline
 set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+
+" Line End Column
+set colorcolumn=81
+highlight ColorColumn ctermbg=13
 
 " Tabs
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set smarttab
 set expandtab
-let g:indentLine_char = '|'
-let g:indentLine_color_term = 239
+let g:indentLine_char = '┆'
+let g:indentLine_color_term = 128
 
-" Wrapping, side-scrolling
-set nowrap
-
-" Highlight search things
+" Searching
 set hlsearch
+set ignorecase
+set smartcase
 
-" When pressing return after typing a comment, don't automatically start a new
-" comment
-au FileType * setlocal formatoptions-=r
+" NERDTree
+map <C-e> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks=1
 
-" When a macro is created on q, let space replay that macro
-noremap <Space> @q
+" :RTW = Remove Trailing Whitespace
+command RTW :%s/\s\+$//e
 
-" Eliminate delay in switching modes
-set timeoutlen=1000 ttimeoutlen=0
+" :CDC = Change to Directory of Current file
+command CDC cd %:p:h
+
+" Miscellaneous
+set nospell
+set list lcs=tab:\|\ ,trail:•,extends:#,nbsp:.
+let g:autoclose_vim_commentmode = 1
 
