@@ -47,7 +47,6 @@ set hidden
 
 " Powerline
 set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
 
 " Line End Column
 set colorcolumn=81
