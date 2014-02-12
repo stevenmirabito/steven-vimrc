@@ -14,4 +14,4 @@ Bundle 'thomascoe/snipmate.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe' " Only compatible with vim 7.4+
