@@ -47,15 +47,16 @@ set hidden
 
 " Powerline
 set laststatus=2
+let g:airline_powerline_fonts = 1
 
 " Line End Column
 set colorcolumn=81
 highlight ColorColumn ctermbg=13
 
 " Tabs
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set smarttab
 set expandtab
 let g:indentLine_char = '┆'
