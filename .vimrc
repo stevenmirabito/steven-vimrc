@@ -50,8 +50,8 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 
 " Line End Column
-set colorcolumn=81
-highlight ColorColumn ctermbg=13
+" set colorcolumn=81
+" highlight ColorColumn ctermbg=13
 
 " Tabs
 set tabstop=4
