@@ -17,6 +17,7 @@ silent! source ~/.vimrc_user
 set mouse=a
 set foldmethod=syntax
 set foldlevelstart=99
+set scrolloff=2
 inoremap  <Up>     <NOP>
 inoremap  <Down>   <NOP>
 inoremap  <Left>   <NOP>
