@@ -30,6 +30,10 @@ nnoremap  <tab> :bn<CR>
 nnoremap  <S-tab> :bp<CR>
 nnoremap  <Space>  za
 
+" Capital Q and W should work too.
+cnoreabbrev W w
+cnoreabbrev Q q
+
 " Relative line numbers
 set number
 
