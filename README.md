@@ -9,3 +9,7 @@ Installation
 If you trust me, here's a one-line installation:
 
     git clone https://github.com/harlanhaskins/harlan-vimrc.git ~/.harlan-vimrc; ~/.harlan-vimrc/setup_vimrc.sh
+
+Screenshot
+---
+[!vimrc](vimrc.png)
