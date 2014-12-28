@@ -12,4 +12,4 @@ If you trust me, here's a one-line installation:
 
 Screenshot
 ---
-[!vimrc](vimrc.png)
+![vimrc](https://raw.githubusercontent.com/harlanhaskins/harlan-vimrc/master/vimrc.png)
