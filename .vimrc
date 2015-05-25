@@ -13,8 +13,9 @@ source ~/.vimrc_bundles
 " User files (optional)
 silent! source ~/.vimrc_user
 
-" Navigation
+" Enable mouse
 set mouse=a
+set ttymouse=xterm2
 set foldmethod=syntax
 set foldlevelstart=99
 set scrolloff=2
@@ -30,33 +31,21 @@ nnoremap  <tab> :bn<CR>
 nnoremap  <S-tab> :bp<CR>
 nnoremap  <Space>  za
 
-" Capital Q and W should work too.
-cnoreabbrev W w
-cnoreabbrev Q q
-
 " Relative line numbers
-set number
+set nu
+set rnu
 
 " Fix backspace
 set backspace=indent,eol,start
 
-" Display
-set encoding=utf-8
+" Colors
 set t_Co=256
+let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 colorscheme obsidian
 syntax on
-set cursorline
-set nowrap
-set splitbelow
-set hidden
 
-" Powerline
-set laststatus=2
-let g:airline_powerline_fonts = 1
-
-" Line End Column
-" set colorcolumn=81
-" highlight ColorColumn ctermbg=13
+" Ruler
+set colorcolumn=80
 
 " Tabs
 set tabstop=4
@@ -64,8 +53,45 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab
 set expandtab
-let g:indentLine_char = '┆'
-let g:indentLine_color_term = 128
+let g:indentLine_char = '|'
+let g:indentLine_color_term = 239
+
+" Powerline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+
+" Wrapping, side-scrolling
+set nowrap
+
+" Highlight search things
+set hlsearch
+
+" When pressing return after typing a comment, don't automatically start a new
+" comment
+au FileType * setlocal formatoptions-=r
+
+" When a macro is created on q, let space replay that macro
+noremap <Space> @q
+
+" Eliminate delay in switching modes
+set timeoutlen=1000 ttimeoutlen=0
+
+" Highlight cursor line
+set cursorline
+
+" Disable spellchecking
+set nospell
+
+" Display
+set encoding=utf-8
+set t_Co=256
+
+set hidden
+
+" File type aliases
+au BufNewFile,BufRead *.ejs set filetype=jst
+au BufNewFile,BufRead *.less set filetype=less
+au BufNewFile,BufRead *.swift set filetype=swift
 
 " Searching
 set hlsearch
@@ -75,15 +101,3 @@ set smartcase
 " NERDTree
 map <C-e> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
-
-" :RTW = Remove Trailing Whitespace
-command RTW :%s/\s\+$//e
-
-" :CDC = Change to Directory of Current file
-command CDC cd %:p:h
-
-" Miscellaneous
-set nospell
-set list lcs=tab:\|\ ,trail:•,extends:#,nbsp:.
-let g:autoclose_vim_commentmode = 1
-
