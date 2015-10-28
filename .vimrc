@@ -41,7 +41,7 @@ set backspace=indent,eol,start
 " Colors
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-colorscheme obsidian
+colorscheme Tomorrow-Night
 syntax on
 
 " Ruler
@@ -92,6 +92,8 @@ set hidden
 au BufNewFile,BufRead *.ejs set filetype=jst
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.swift set filetype=swift
+au BufNewFile,BufRead *.imp,*.ic set filetype=scheme
+au BufNewFile,BufRead *.hasm set filetype=asm
 
 " Searching
 set hlsearch
