@@ -19,17 +19,6 @@ set ttymouse=xterm2
 set foldmethod=syntax
 set foldlevelstart=99
 set scrolloff=2
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>
-nnoremap  <tab> :bn<CR>
-nnoremap  <S-tab> :bp<CR>
-nnoremap  <Space>  za
 
 " Relative line numbers
 set nu
