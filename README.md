@@ -8,8 +8,8 @@ Installation
 -----
 If you trust me, here's a one-line installation:
 
-    git clone https://github.com/harlanhaskins/harlan-vimrc.git ~/.harlan-vimrc; ~/.harlan-vimrc/setup_vimrc.sh
+    git clone https://github.com/stevenmirabito/steven-vimrc.git ~/.steven-vimrc; ~/.steven-vimrc/setup_vimrc.sh
 
 Screenshot
 ---
-![vimrc](https://raw.githubusercontent.com/harlanhaskins/harlan-vimrc/master/vimrc.png)
+![vimrc](https://raw.githubusercontent.com/stevenmirabito/steven-vimrc/master/vimrc.png)
