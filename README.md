@@ -9,6 +9,8 @@ Installation
 If you trust me, here's a one-line installation:
 
     git clone https://github.com/stevenmirabito/steven-vimrc.git ~/.steven-vimrc; ~/.steven-vimrc/setup_vimrc.sh
+    
+You must also install a patched terminal font for Powerline. Here's a patched version of Monaco, the default font: https://gist.github.com/baopham/1838072
 
 Screenshot
 ---
