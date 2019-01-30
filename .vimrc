@@ -1,14 +1,11 @@
 " Fix shell
-set shell=/bin/bash
+set shell=/bin/zsh
 
 " Not compatible with Vi
 set nocompatible
 
-" Vundle
-source ~/.vimrc_vundle
-
-" Bundles
-source ~/.vimrc_bundles
+" Plugins
+source ~/.vimrc_plugins
 
 " User files (optional)
 silent! source ~/.vimrc_user
@@ -30,7 +27,7 @@ set backspace=indent,eol,start
 " Colors
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-colorscheme Tomorrow-Night
+colorscheme brogrammer
 syntax on
 
 " Ruler
@@ -51,9 +48,6 @@ let g:airline_powerline_fonts = 1
 
 " Wrapping, side-scrolling
 set nowrap
-
-" Highlight search things
-set hlsearch
 
 " When pressing return after typing a comment, don't automatically start a new
 " comment

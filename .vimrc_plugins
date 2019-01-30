@@ -1,0 +1,21 @@
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+" Plugins
+Plug 'flazz/vim-colorschemes'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'Yggdroot/indentLine'
+Plug 'LaTeX-Box-Team/LaTeX-Box'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'ekalinin/dockerfile.vim'
+
+" Initialize plugin system
+call plug#end()
